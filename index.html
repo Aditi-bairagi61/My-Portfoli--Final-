@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    
+    <nav id="desktop-nav">
+      
+      <div class="logo">Aditi Bairagi</div>
+      
+      <div>
+        
+        <ul class="nav-links">
+          
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+
+
+        </ul>
+        
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Aditi Bairagi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profilepic.jpeg" alt="Aditi Bairagi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Aditi Bairagi</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/aditi-bairagi-9a21011b6'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+     <!-- About -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img width="350rem"
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Skills</h3>
+              <p>C++| DSA | HTML | CSS | JavaScript | Bootstrap | MySQL |Team Leadership |Python |AngularJS |Cloud Computing </p>
+              <div>
+
+              </div>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech Computer Technology<br /></p>
+              <p>Diploma in Computer Technology<br /></p>
+              <p>Honors Degree in AIML</p>
+            </div>
+          </div>
+          
+          <div class="text-container">
+            <p>
+               &nbsp; &nbsp; &nbsp; Aditi Bairagi | 💼 Frontend Developer | 🌐 Web Development Enthusiast
+               🎓 Pursuing Bachelor's in Computer Science | 📜 Diploma Holder
+               🚀 Passionate about Web Development | 💡 Proficient in C++ | 🎯 Problem Solver
+               🏆 Honors in AIML | 🐍 Python Foundation | 🛠️ Project Enthusiast | Android 
+               👩‍💼 Experienced in Project Development & Sponsorship | 🤝 Customer-Centric Solutions
+               🔍 Adaptable Professional | 🌱 Eager to Contribute & Learn | 🌟 Driven by Passion & Curiosity
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <!--Experience -->
+     <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <br><br>
+        <div class="experience-details-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Web Developer Intern</h2>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <p>Origin Software Solution (2021)<br>🌐<br><i>Achievements/Tasks<br>Worked as a front-end to develop a web application.<br>To understand real-life problems and solve them through technologies.</i></p>
+            </div>
+    
+            <div class="details-container">
+                <h2 class="experience-sub-title">"Secured Ashwamedh Sponsorship"</h2>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <p>Ashwamedh Agro Chemicals Pvt. Ltd. <br>🌐<br><i>Achievements/Tasks<br>"Led cross-functional team in developing a dynamic Employee Performance Tracker system. <br>Accomplished backend operations, MySQL, and website structure design."</i></p>
+            </div>
+        </div>
+    </section>
+
+   
+       
+       
+ 
+
+      <!-- Projects -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img style="width: 300px; height: 200px;"
+                src="./assets/one.JPG"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            
+            <h2 class="experience-sub-title project-title">Employee Performance Tracker</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Aditi-bairagi61/Employee_Performance_Tracker'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Aditi-bairagi61/Employee_Performance_Tracker'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img style="width: 300px; height: 200px;"
+                src="./assets/two.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Task Management System</h2>
+            <br><div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Aditi-bairagi61/Task-Management-System'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Aditi-bairagi61/Task-Management-System'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/three.JPG" style="width: 300px; height: 200px;"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Happy Cake Shop</h2>
+        <br>    <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="projects">
+      
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img style="width: 300px; height: 200px;"
+                  src="./assets/four.JPG"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              
+              <h2 class="experience-sub-title project-title">Music Player Using Emojis</h2>
+             <br> <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditi-bairagi61/Music-Player-Using-Emojis'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditi-bairagi61/Music-Player-Using-Emojis'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img style="width: 300px; height: 200px;"
+                  src="./assets/five.JPG"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Ecommerce Website</h2>
+              <br><div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditi-bairagi61/Task-Management-System'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Aditi-bairagi61/Task-Management-System'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aditibairagi1456@gmail.com">aditibairagi1456@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aditi-bairagi-9a21011b6/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Aditi Bairagi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
